@@ -1,0 +1,135 @@
+.faq-section {
+  padding-top: 80px;
+
+  @include media(desktop) {
+    padding-top: 150px;
+  }
+}
+
+.faq-container {
+  @include media(desktop) {
+  }
+}
+
+.faq-title {
+  @include media(desktop) {
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%;
+  max-width: 335px;
+  transition: all 0.3s ease-in-out;
+
+  @include media(desktop) {
+    max-width: 629px;
+  }
+}
+
+.faq-top-text-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-toggle-symbol {
+  border: 1px solid #b05f1b;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-icon {
+  transform: rotate(180deg);
+
+  @include media(desktop) {
+  }
+}
+
+.faq-btn-text {
+  border: 1px solid #b05f1b;
+  border-radius: 20px;
+  padding: 11px 17px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3e332b;
+  text-align: left;
+  width: 100%;
+  transition: color 0.3s ease-in-out;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-bottom-text {
+  border-radius: 20px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3e332b;
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+
+  @include media(desktop) {
+    max-width: 576px;
+    margin-left: auto;
+  }
+}
+
+.is-visible {
+  max-height: 500px;
+  opacity: 1;
+
+  @include media(desktop) {
+  }
+}
+
+.faq-list-item.faq-open .faq-toggle-symbol {
+  transform: rotate(180deg);
+}
+
+.faq-list-item.faq-open {
+}
+
+.faq-list-item.faq-open .faq-bottom-text {
+  border: 1px solid #b05f1b;
+  padding: 11px 17px;
+}
+
+.faq-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}

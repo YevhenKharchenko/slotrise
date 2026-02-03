@@ -1,0 +1,83 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+  padding: 0;
+
+  @include media(desktop) {
+  }
+}
+
+.features-content-wrapper {
+  @include media(desktop) {
+    padding: 94px 80px;
+    background-image: url(../img/features/features-bg-desk.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+}
+
+.features-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px;
+
+  @include media(desktop) {
+    gap: 20px;
+    padding: 0;
+    max-width: 522px;
+  }
+}
+
+.features-list-item {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+
+  @include media(desktop) {
+  }
+}
+
+.puzzle-icon {
+  min-width: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.features-item-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #3e332b;
+
+  @include media(desktop) {
+  }
+}

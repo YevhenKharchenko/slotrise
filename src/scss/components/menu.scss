@@ -1,0 +1,71 @@
+.context-menu {
+  background: #f9d0a0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: none;
+  z-index: 5;
+}
+
+.context-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.context-nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 28px;
+}
+
+.context-list-item {
+}
+
+.context-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3e332b;
+  transition:
+    color 0.3s ease-in-out,
+    background 0.3s ease-in-out;
+
+  &:active {
+    color: #205144;
+  }
+}
+
+.is-open {
+  display: flex;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.closed {
+  display: none;
+}
+
+.screen-freeze {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}

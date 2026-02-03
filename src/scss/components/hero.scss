@@ -1,0 +1,54 @@
+.hero-section {
+  @include media(desktop) {
+  }
+}
+
+.hero-bg-wrapper {
+  padding-top: 128px;
+  padding-bottom: 173px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  @include media(desktop) {
+    padding-top: 125px;
+    padding-bottom: 215px;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.hero-container {
+  @include media(desktop) {
+  }
+}
+
+.hero-content-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+  }
+}
+
+.hero-title-img {
+  margin-bottom: 248px;
+
+  @include media(desktop) {
+    margin-bottom: 56px;
+  }
+}
+
+.hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+
+  @include media(desktop) {
+    justify-content: start;
+  }
+}

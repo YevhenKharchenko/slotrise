@@ -1,0 +1,89 @@
+.contact-section {
+  @include media(desktop) {
+  }
+}
+
+.contact-bg-wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    max-width: 1440px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.contact-container {
+  @include media(desktop) {
+  }
+}
+
+.contact-title {
+  margin-bottom: 38px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #3e332b;
+  margin-bottom: 14px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #3e332b;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #3e332b;
+
+  @include media(desktop) {
+  }
+}
+
+.contact-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    left: 108px;
+    z-index: 0;
+  }
+}
