@@ -1,5 +1,5 @@
 .cookie-banner-section {
-  background: #f9d0a0;
+  background: #ffb804;
   padding: 38px 16px 74px;
   width: 100%;
   max-width: 375px;
@@ -27,12 +27,12 @@
 }
 
 .cookie-banner-text {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
   text-align: center;
-  color: #3e332b;
+  color: #1f2a44;
   margin-bottom: 24px;
 
   @include media(desktop) {
@@ -59,14 +59,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #3e332b;
+  background: #1f2a44;
   border-radius: 40px;
   padding: 24px 32px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
   font-size: 22px;
   line-height: 1.5;
-  color: #f9d0a0;
+  color: #ffb804;
   width: 100%;
   max-width: 295px;
   transition: background 0.3s ease-in-out;
@@ -84,14 +84,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #3e332b;
+  border: 1px solid #1f2a44;
   border-radius: 40px;
   padding: 23px 31px;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
   font-size: 22px;
   line-height: 1.5;
-  color: #3e332b;
+  color: #1f2a44;
   width: 100%;
   max-width: 295px;
   transition:

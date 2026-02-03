@@ -1,5 +1,5 @@
 .header {
-  background: #f9d0a0;
+  background: transparent;
   position: fixed;
   width: 100%;
   top: 0;
@@ -10,7 +10,7 @@
 }
 
 .header-context {
-  background: #f9d0a0;
+  background: transparent;
 }
 
 .header-bg-wrapper {
@@ -61,11 +61,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Source Sans 3', sans-serif;
-  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #3e332b;
+  color: #1f2a44;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +77,7 @@
   &:focus,
   &:active,
   &.active {
-    color: #205144;
+    color: #ffb804;
   }
 }
 

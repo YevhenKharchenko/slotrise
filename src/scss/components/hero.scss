@@ -4,8 +4,8 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 128px;
-  padding-bottom: 173px;
+  padding-top: 152px;
+  padding-bottom: 70px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
@@ -15,10 +15,26 @@
   background-size: cover;
 
   @include media(desktop) {
-    padding-top: 125px;
-    padding-bottom: 215px;
+    padding-top: 144px;
+    padding-bottom: 238px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.jpg);
+    background-image:
+      url(../img/hero/hero-top-left-brilliant.png),
+      url(../img/hero/hero-top-right-brilliant.png),
+      url(../img/hero/hero-bottom-left-brilliant.png),
+      url(../img/hero/hero-bottom-middle-brilliant.png),
+      url(../img/hero/hero-bottom-right-brilliant.png),
+      url(../img/hero/hero-bg-desk.jpg);
+    background-repeat:
+      no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position:
+      top 264px left 274px,
+      top 150px right 300px,
+      bottom -89px left 157px,
+      bottom 0px left 392px,
+      bottom 0px right 74px,
+      top center;
+    background-size: auto, auto, auto, auto, auto, cover;
   }
 }
 
@@ -27,18 +43,13 @@
   }
 }
 
-.hero-content-wrapper {
-  @include media(desktop) {
-    max-width: max-content;
-    margin-left: auto;
-  }
-}
-
 .hero-title-img {
-  margin-bottom: 248px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 380px;
 
   @include media(desktop) {
-    margin-bottom: 56px;
+    margin-bottom: 112px;
   }
 }
 
@@ -47,8 +58,9 @@
   justify-content: center;
   align-items: center;
   max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
-    justify-content: start;
   }
 }
