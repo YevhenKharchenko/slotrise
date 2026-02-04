@@ -1,0 +1,106 @@
+.boosters-section {
+  @include media(desktop) {
+  }
+}
+
+.boosters-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+  }
+}
+
+.boosters-container {
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 80px;
+  }
+}
+
+.boosters-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 26px;
+  }
+}
+
+.boosters-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.boosters-list-wrapper {
+  background: #86cbff;
+  border-radius: 4px;
+  padding: 28px 22px;
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 639px;
+    margin: 0;
+  }
+}
+
+.boosters-list-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+  color: #1f2a44;
+  margin-bottom: 26px;
+
+  @include media(desktop) {
+  }
+}
+
+.boosters-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include media(desktop) {
+  }
+}
+
+.boosters-list-item {
+  display: flex;
+  align-items: start;
+  gap: 8px;
+
+  @include media(desktop) {
+  }
+}
+
+.puzzle-icon {
+  min-width: 32px;
+
+  @include media(desktop) {
+  }
+}
+
+.boosters-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1f2a44;
+
+  @include media(desktop) {
+  }
+}

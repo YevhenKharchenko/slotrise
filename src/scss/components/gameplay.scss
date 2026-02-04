@@ -11,7 +11,10 @@
 }
 
 .gameplay-container {
+  padding: 0;
+
   @include media(desktop) {
+    padding: 0 80px;
   }
 }
 
@@ -20,54 +23,89 @@
   }
 }
 
-.gameplay-list {
+.gameplay-top-text-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    color: #1f2a44;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+
+.gameplay-content-wrapper-desk {
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.gameplay-text-wrapper-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+    max-width: 305px;
+  }
+}
+
+.gameplay-text-desk {
+  @include media(desktop) {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #1f2a44;
+  }
+}
+
+.gameplay-img-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.about-img {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    margin: 0;
+  }
+}
+
+.gameplay-text-wrapper-mob {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
+  padding: 0 20px;
 
   @include media(desktop) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    gap: 20px;
+    display: none;
   }
 }
 
-.gameplay-list-item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-
-  @include media(desktop) {
-    width: 100%;
-    max-width: 630px;
-
-    &:nth-child(3) {
-      flex-direction: row-reverse;
-    }
-
-    &:nth-child(4) {
-      flex-direction: row-reverse;
-    }
-  }
-}
-
-.gameplay-img {
-  min-width: 197px;
-
-  @include media(desktop) {
-  }
-}
-
-.gameplay-item-text {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+.gameplay-text-mob {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
   line-height: 1.5;
-  color: #3e332b;
+  color: #1f2a44;
 
   @include media(desktop) {
-    max-width: 305px;
   }
 }

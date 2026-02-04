@@ -9,19 +9,28 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 
   @include media(desktop) {
     padding-top: 150px;
     padding-bottom: 150px;
     max-width: 1440px;
-    position: relative;
-    overflow: hidden;
+    background-image: url(../img/contact/contact-bg-desk.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: auto;
   }
 }
 
 .contact-container {
   @include media(desktop) {
+  }
+}
+
+.contact-content-wrapper {
+  @include media(desktop) {
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: 275px;
   }
 }
 
@@ -33,9 +42,9 @@
 }
 
 .contact-subtitle {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+  font-size: 22px;
   line-height: 1.5;
   text-align: center;
   color: #3e332b;
@@ -49,7 +58,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -65,7 +74,7 @@
 }
 
 .contact-text {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -73,17 +82,5 @@
   color: #3e332b;
 
   @include media(desktop) {
-  }
-}
-
-.contact-img {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
-    position: absolute;
-    bottom: -20px;
-    left: 108px;
-    z-index: 0;
   }
 }

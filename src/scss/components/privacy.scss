@@ -1,11 +1,19 @@
 .privacy-body {
+  .header {
+    background: #7bbcfb;
+  }
+
   .header-bg-wrapper {
     background-image: none;
+  }
+
+  .menu-icon {
+    fill: #ffb804;
   }
 }
 
 .policy-section {
-  background: #f9d0a0;
+  background: #7bbcfb;
   padding-top: 126px;
   padding-bottom: 80px;
 
@@ -16,12 +24,12 @@
 }
 
 .policy-main-title {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 1.5;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 1.2;
   text-align: center;
-  color: #205144;
+  color: #ffb804;
   margin-bottom: 32px;
 
   @include media(desktop) {
@@ -30,11 +38,11 @@
 }
 
 .policy-title {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #3e332b;
+  color: #1f2a44;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -42,11 +50,11 @@
 }
 
 .policy-text {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #3e332b;
+  color: #1f2a44;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -62,11 +70,11 @@
 }
 
 .policy-item {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #3e332b;
+  color: #1f2a44;
   margin-bottom: 8px;
 
   &:last-child {

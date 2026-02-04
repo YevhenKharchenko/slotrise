@@ -8,10 +8,16 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @include media(desktop) {
     padding-top: 150px;
+    padding-bottom: 63px;
     max-width: 1440px;
+    background-image: url(../img/about/about-bg-desk.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: auto;
   }
 }
 
@@ -28,12 +34,12 @@
 .about-content-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 27px;
 
   @include media(desktop) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 130px;
   }
 }
 
@@ -45,39 +51,36 @@
 
 .about-img {
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 39px;
 
   @include media(desktop) {
-    min-width: 454px;
     margin: 0;
   }
 }
 
 .about-text {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.5;
-  color: #000;
+  color: #1f2a44;
 
   @include media(desktop) {
-  }
-}
-
-.about-top-text {
-  @include media(desktop) {
-    max-width: 325px;
-    order: 1;
-  }
-}
-
-.about-bottom-text {
-  @include media(desktop) {
-    max-width: 305px;
-    order: 3;
+    max-width: 522px;
   }
 }
 
 .about-text-span {
   font-weight: 700;
+}
+
+.about-brilliants-img {
+  position: absolute;
+  top: 423px;
+  left: 43px;
+
+  @include media(desktop) {
+    top: 504px;
+    left: 563px;
+  }
 }
